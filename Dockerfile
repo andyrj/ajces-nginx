@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM andyj/ajces-base:latest
 RUN apk add --update openssl nginx && rm -rf /var/cache/apk/*
 
 COPY dhparams.pem /etc/ssl/dhparams.pem
